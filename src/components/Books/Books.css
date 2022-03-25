@@ -1,0 +1,48 @@
+.books-info{
+    width: 340px;
+    height: 410px;
+    background-color: #eeeae5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.books-info:hover{
+    box-shadow: 10px 10px 10px 10px rgb(204, 180, 180);
+}
+
+.books-info img {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.books-info h1{
+    margin: 5px;
+}
+
+.books-info h2 {
+    margin: 0;
+}
+.add-to-cart{
+   display: flex;
+   margin: 2px;
+   border: 1px solid #a58761;
+   border-radius: 10px;
+}
+.add-to-cart:hover{
+   background-color: rgb(28, 61, 61);
+  
+}
+.add-btn{
+    border: none;
+    font-size: 20px;
+    color: rgb(28, 61, 61);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: transparent;
+    cursor: pointer;
+}
+.add-btn:hover{
+    color: #eeeae5;
+    font-size: 20px;
+}

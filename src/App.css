@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #485368;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.books-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
 }
