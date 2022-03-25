@@ -49,7 +49,11 @@ function App() {
  }
 
 
- 
+ const chooseAgain = () => {
+   let newCart = [];
+   setCart(newCart);
+ }
+
 
   useEffect(() => {
     fetch('books.json')
@@ -78,6 +82,7 @@ function App() {
         </div>
         <div className="modal-btns">
         <button onClick={getRandomItem} className="draw-btn">Draw</button>
+        <button onClick={chooseAgain}>Choose Again</button>
         </div>
       </Modal>
     </div>
