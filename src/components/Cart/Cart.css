@@ -1,0 +1,17 @@
+.cart-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(165, 161, 161);
+    border-radius: 20px;
+    margin: 10px 0;
+}
+.cart-container img {
+    width: 35px;
+    margin:0 20px;  
+}
+.cart-container h2{
+    margin:0 20px;
+    font-size: 20px;
+}

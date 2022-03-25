@@ -2,8 +2,8 @@ import React from 'react';
 import { RiShoppingCart2Fill } from 'react-icons/ri';
 import './Books.css'
 
-const Books = ( {books} ) => {
-   console.log(books);
+const Books = ( {books, addToCart} ) => {
+//    console.log(books);
    const {name, picture, price} = books;
     return (
         <div className="books-info">
@@ -11,7 +11,7 @@ const Books = ( {books} ) => {
            <h1>{name}</h1>
            <h2>${price}</h2>
            <div className="add-to-cart">
-               <button className="add-btn">Add to Cart </button>
+               <button className="add-btn" onClick={() => addToCart(books)}>Add to Cart</button>
                <RiShoppingCart2Fill size='30px' color='#485368'/>
            </div>
         </div>

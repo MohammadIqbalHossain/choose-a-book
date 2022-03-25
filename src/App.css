@@ -44,6 +44,18 @@
   gap: 48px;
   margin: 20px;
 }
+.modal-btns{
+  text-align: center;
+}
+.draw-btn{
+   padding: 10px 20px;
+   background-color: #7591aa;
+   border: 0;
+   border-radius: 20px;
+   color: #FFFFFF;
+   font-size: 20px;
+   cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
   .books-container{
@@ -53,3 +65,4 @@
     align-items: center;
   }
 }
+
