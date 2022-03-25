@@ -3,6 +3,7 @@ import './App.css';
 import Books from './components/Books/Books';
 import Modal from 'react-modal';
 import Cart from './components/Cart/Cart';
+import Header from './components/Header/Header';
 
 function App() {
 
@@ -63,9 +64,9 @@ function App() {
 
   return (
     <div className="App">
+      <Header cart={cart} openModal={openModal}></Header>
        <button onClick={openModal}>Open</button>
       <div className="books-container">
-       
         {
           books.map(book => <Books books={book} key={book.id} addToCart={addToCart}></Books>)
         }
@@ -82,7 +83,7 @@ function App() {
         </div>
         <div className="modal-btns">
         <button onClick={getRandomItem} className="draw-btn">Draw</button>
-        <button onClick={chooseAgain}>Choose Again</button>
+        <button className="draw-btn" onClick={chooseAgain}>Choose Again</button>
         </div>
       </Modal>
     </div>
