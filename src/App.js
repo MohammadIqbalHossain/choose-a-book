@@ -28,7 +28,6 @@ function App() {
     setIsOpen(true);
   }
 
-
   function closeModal() {
     setIsOpen(false);
   }
@@ -65,7 +64,7 @@ function App() {
   return (
     <div className="App">
       <Header cart={cart} openModal={openModal}></Header>
-       <button onClick={openModal}>Open</button>
+       {/* <button onClick={openModal}>Open</button> */}
       <div className="books-container">
         {
           books.map(book => <Books books={book} key={book.id} addToCart={addToCart}></Books>)

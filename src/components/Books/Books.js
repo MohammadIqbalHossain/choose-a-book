@@ -7,7 +7,7 @@ const Books = ( {books, addToCart} ) => {
    const {name, picture, price} = books;
     return (
         <div className="books-info">
-           <img src={picture} alt="" />
+           <img src={picture} alt=""/>
            <h1>{name}</h1>
            <h2>${price}</h2>
            <div className="add-to-cart">
