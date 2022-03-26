@@ -5,7 +5,6 @@ import { HiShoppingCart } from 'react-icons/hi';
 const Header = ({cart, openModal}) => {
   
   return (
-   
     <nav className='navbar'>
     <h1>Choose a book</h1>
     <div className='cart-counter' onClick={openModal}>

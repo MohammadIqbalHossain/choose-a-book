@@ -11,10 +11,7 @@ const Cart = ({ book }) => {
                 <h2>{name}</h2>
                 <MdDelete size='30px' />
             </div>
-        </div>
-      
-         
-        
+        </div>   
     );
 };
 
