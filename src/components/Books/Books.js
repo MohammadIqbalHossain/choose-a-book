@@ -10,8 +10,8 @@ const Books = ( {books, addToCart} ) => {
            <img src={picture} alt=""/>
            <h2>{name}</h2>
            <h2>Price: ${price}</h2>
-           <div className="add-to-cart">
-               <button className="add-btn" onClick={() => addToCart(books)}>Add to Cart</button>
+           <div className="add-to-cart" onClick={() => addToCart(books)}>
+               <button className="add-btn" >Add to Cart</button>
                <RiShoppingCart2Fill size='30px' color='#485368'/>
            </div>
         </div>

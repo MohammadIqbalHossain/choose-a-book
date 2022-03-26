@@ -5,7 +5,7 @@ import Modal from 'react-modal';
 import Cart from './components/Cart/Cart';
 import Header from './components/Header/Header';
 import Answers from './components/Answers/Answers';
-import { FcReading} from 'react-icons/fc';
+import { FcReading } from 'react-icons/fc';
 import { BiCut } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -26,6 +26,13 @@ function App() {
       transform: 'translate(-50%, -50%)',
     },
   };
+
+  const modalStyles = {
+    overflow: 'scroll',
+    maxHeight: '100vh',
+    
+
+  }
   Modal.setAppElement('#root');
 
   function openModal() {
@@ -37,7 +44,6 @@ function App() {
   }
 
   const addToCart = (books) => {
-    // console.log('Hello', books);
     const newCart = [...cart, books];
     setCart(newCart);
   }
@@ -51,6 +57,7 @@ function App() {
 
 
   const chooseAgain = () => {
+    closeModal()
     let newCart = [];
     setCart(newCart);
   }
@@ -75,18 +82,20 @@ function App() {
         onRequestClose={closeModal}
         style={customStyles}
       >
-        <button className="close" onClick={closeModal}><AiOutlineClose /></button>
-        <div>
-          {
-            cart.map(book => <Cart book={book} key={book.id}></Cart>)
-          }
-        </div>
-        <div className="modal-btns">
-          <button onClick={getRandomItem} className="draw-btn">Choose One <FcReading size='25px'/> </button>
-          <br />
-          <br />
-          <button className="draw-btn" onClick={chooseAgain}>Choose Again <BiCut color='red'/></button>
-        </div>
+        <div  style={modalStyles}>
+          <button className="close" onClick={closeModal}><AiOutlineClose /></button>
+          <div>
+            {
+              cart.map(book => <Cart book={book} key={book.id}></Cart>)
+            }
+          </div>
+          <div className="modal-btns">
+            <button onClick={getRandomItem} className="draw-btn">Choose One <FcReading size='25px' /> </button>
+            <br />
+            <br />
+            <button className="draw-btn" onClick={chooseAgain}>Choose Again <BiCut color='red' /></button>
+          </div>
+          </div>
       </Modal>
       <Answers></Answers>
     </div>

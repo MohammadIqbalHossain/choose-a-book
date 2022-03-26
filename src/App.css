@@ -68,7 +68,10 @@
   font-size: 15px;
   border: 1px solid red;
 }
-
+.modal{
+   max-width: 100vh;
+   overflow-y: auto;
+}
 @media only screen and (max-width: 600px) {
   .books-container{
     grid-template-columns: 1fr;

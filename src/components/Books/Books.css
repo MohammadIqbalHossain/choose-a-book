@@ -38,21 +38,25 @@
    bottom: 0;
    justify-content: center;
    height: 40px;
+   background-color: #57ac57d0;
+  
 }
 .add-to-cart:hover{
    background-color: rgb(28, 61, 61);
-  
+
 }
 .add-btn{
     border: none;
     font-size: 20px;
-    color: rgb(28, 61, 61);
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: transparent;
     cursor: pointer;
+    
     
 }
 .add-btn:hover{
     color: #eeeae5;
     font-size: 20px;
+  
 }
