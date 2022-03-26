@@ -11,7 +11,7 @@ function App() {
   const [books, setBooks] = useState([]);
   const [modalIsOpen, setIsOpen] = useState(false);
   const [cart, setCart] = useState([]);
- 
+
 
   const customStyles = {
     content: {
@@ -39,21 +39,18 @@ function App() {
     setCart(newCart);
   }
 
- const getRandomItem = () => {
-    const randomNum = Math.floor(Math.random() * cart.length);
+  const getRandomItem = () => {
+    const randomNum = cart[Math.floor(Math.random() * cart.length)];
     let newCart = [];
-    console.log(randomNum);
-    for(const index of cart){
-     newCart = [index];
-    }
-   setCart(newCart);
- }
+    newCart = [randomNum];
+    setCart(newCart);
+  }
 
 
- const chooseAgain = () => {
-   let newCart = [];
-   setCart(newCart);
- }
+  const chooseAgain = () => {
+    let newCart = [];
+    setCart(newCart);
+  }
 
 
   useEffect(() => {
@@ -76,13 +73,13 @@ function App() {
         style={customStyles}
       >
         <div>
-        {
-        cart.map(book => <Cart book={book} key={book.id}></Cart>)
-        }
+          {
+            cart.map(book => <Cart book={book} key={book.id}></Cart>)
+          }
         </div>
         <div className="modal-btns">
-        <button onClick={getRandomItem} className="draw-btn">Draw</button>
-        <button className="draw-btn" onClick={chooseAgain}>Choose Again</button>
+          <button onClick={getRandomItem} className="draw-btn">Draw</button>
+          <button className="draw-btn" onClick={chooseAgain}>Choose Again</button>
         </div>
       </Modal>
       <Answers></Answers>
