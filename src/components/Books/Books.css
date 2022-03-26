@@ -6,6 +6,9 @@
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
+    font-family: "Metamorphous", cursive;
+    color: #4e5c77;
+    position: relative;
 }
 .books-info:hover{
     box-shadow: 10px 10px 10px 10px rgb(204, 180, 180);
@@ -15,11 +18,11 @@
     width: 200px;
     padding: 10px;
     border-radius: 20px;
-    
 }
 
-.books-info h1{
+.books-info h2{
     margin: 5px;
+    text-align: center;
 }
 
 .books-info h2 {
@@ -28,8 +31,13 @@
 .add-to-cart{
    display: flex;
    margin: 2px;
-   border: 1px solid #a58761;
-   border-radius: 10px;
+   width: 100%;
+   border: 1px solid #435c8f;
+   border-radius: 0px 0px 8px 8px;
+   position: absolute;
+   bottom: 0;
+   justify-content: center;
+   height: 40px;
 }
 .add-to-cart:hover{
    background-color: rgb(28, 61, 61);
@@ -42,6 +50,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: transparent;
     cursor: pointer;
+    
 }
 .add-btn:hover{
     color: #eeeae5;

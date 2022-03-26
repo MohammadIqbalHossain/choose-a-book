@@ -9,7 +9,7 @@ const Cart = ({ book }) => {
             <div className="cart-container">
                 <img src={picture} alt="" />
                 <h2>{name}</h2>
-                <MdDelete size='30px' />
+                <MdDelete size='30px' color='#a3353593'/>
             </div>
         </div>   
     );

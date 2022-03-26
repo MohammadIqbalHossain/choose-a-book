@@ -49,12 +49,24 @@
 }
 .draw-btn{
    padding: 10px 20px;
-   background-color: #7591aa;
    border: 0;
-   border-radius: 20px;
-   color: #FFFFFF;
+   border-radius: 10px;
+   border: 1.5px solid #255333;
+   background: transparent;
+   color: #485368;
    font-size: 20px;
    cursor: pointer;
+}
+.draw-btn:hover{
+  background-color: #255333;
+  color: aliceblue;
+}
+
+.close{
+  margin:10px 0;
+  color: red;
+  font-size: 15px;
+  border: 1px solid red;
 }
 
 @media only screen and (max-width: 600px) {
@@ -66,3 +78,11 @@
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .books-container{
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

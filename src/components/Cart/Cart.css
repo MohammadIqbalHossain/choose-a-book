@@ -4,7 +4,7 @@
     align-items: center;
     padding: 20px;
     background-color: rgb(165, 161, 161);
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 10px 0;
 }
 .cart-container img {
@@ -13,5 +13,8 @@
 }
 .cart-container h2{
     margin:0 20px;
-    font-size: 20px;
+    font-size: 23px;
+    color: #435c8f;
+    font-family: 'Courier New', Courier, monospace;
 }
+
