@@ -3,7 +3,6 @@ import { RiShoppingCart2Fill } from 'react-icons/ri';
 import './Books.css'
 
 const Books = ( {books, addToCart} ) => {
-//    console.log(books);
    const {name, picture, price} = books;
     return (
         <div className="books-info">
